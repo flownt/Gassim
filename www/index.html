@@ -2,9 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hello wasm-pack!</title>
+    <title>Gas Sim!</title>
+
+    <style>
+  body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+    </style>
   </head>
   <body>
+  <div>
+    <canvas id="parts-canvas"></canvas>
+    <canvas id="graph-canvas"></canvas>
+  </div>
+  <button id="play-pause">⏸</button>
+    <pre id="parts-pre"></pre>
     <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
     <script src="./bootstrap.js"></script>
   </body>
